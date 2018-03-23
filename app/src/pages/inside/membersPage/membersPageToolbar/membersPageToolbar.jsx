@@ -13,11 +13,11 @@ const cx = classNames.bind(styles);
 
 const messages = defineMessages({
   permissionMap: {
-    id: 'MembersPage.permissionMap',
+    id: 'MembersPageToolbar.permissionMap',
     defaultMessage: 'Permission map',
   },
   inviteUser: {
-    id: 'MembersPage.inviteUser',
+    id: 'MembersPageToolbar.inviteUser',
     defaultMessage: 'Invite user',
   },
 });
@@ -63,7 +63,7 @@ export class MembersPageToolbar extends React.Component {
           <MemberSearchInput />
         </FieldProvider>
         <div className={cx('members-page-controls')}>
-          <GhostButton >
+          <GhostButton onClick={() => this.props.showModalAction({ id: 'permissionMapModal', data: {} })}>
             {this.props.intl.formatMessage(messages.permissionMap)}
           </GhostButton>
           <GhostButton >
