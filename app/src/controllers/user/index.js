@@ -13,5 +13,9 @@ export {
   userIdSelector,
   startTimeFormatSelector,
   isAdminSelector,
+  getAssignedProjectsSelector,
+  getRoleForCurrentProjectSelector,
+  isAdminSelector,
+  hasPermissionsSelector,
   activeProjectRoleSelector,
 } from './selectors';
