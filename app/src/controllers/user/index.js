@@ -15,7 +15,4 @@ export {
   isAdminSelector,
   getAssignedProjectsSelector,
   getRoleForCurrentProjectSelector,
-  isAdminSelector,
-  hasPermissionsSelector,
-  activeProjectRoleSelector,
 } from './selectors';
